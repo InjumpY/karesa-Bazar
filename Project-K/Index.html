@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Karesa Bazzar</title>
+	<link rel="icon" type="image/icon" href="image/favicon.png">
 
 	<!-- code for font -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,6 +29,7 @@
 <a href="#Products">Products</a>
 <a href="#Categories">Categories</a>
 <a href="#Review">Review</a>
+<a href="#Blogs">Blogs</a>
 </nav>
 
 <div class="icons">
@@ -35,6 +37,7 @@
 	<div class="fa fa-search" id="search-btn"></div>
 	<div class="fa fa-shopping-basket" id="cart-btn"></div>
 	<div class="fa fa-user" id="login-btn"></div>
+	<div class="fa fa-user-plus" id="register-btn"></div>
 	
 
 </div>
@@ -98,17 +101,61 @@
 
 <form action="#" class="login-form">
 	<h3>Login now</h3>
-	<input type="email"placeholder="Enter your email" class="box">
-	<input type="password"placeholder="Enter your password" class="box">
+	<input type="email"placeholder="Enter your email" required class="box">
+	<input type="password"placeholder="Enter your password" required class="box">
 
 	<p>Forgot your password ?<a href="#">click here</a></p>
-	<p>Don't have an account ?<a href="#">create now</a></p>
+	<p>Don't have an account ? <a href="#" class="btn" id="registerbtn">register</a></p>
+	<!-- change to class register-link-->
+		<!-- remove id-->
+
 
 
 
 	<input type="submit" value="Login now" class="btn">
 </form>
 
+
+<!--experiment----------------------------------------------------------------------------------------------->
+<form action="#" class="registration-form">
+	<h3>Register now</h3>
+	<input type="text"placeholder="Enter your username" required class="box">
+	<input type="email"placeholder="Enter your email" required class="box">
+	<input type="password"placeholder="Enter your password" required class="box">
+		<input type="password"placeholder="Retype your password" required class="box">
+
+	<!--<p>Forgot your password ?<a href="#">click here</a></p>----->
+	<p>Already have an account ?<a href="#" class="loggin" id="loginnow">login</a></p>
+
+
+
+	<input type="submit" value="Register now" class="btn">
+</form>
+
+
+
+<!--experiment----------------------------------------------------------------------------------------------->
+
+
+<form action="#" class="registrationform" onsubmit="return myfun ()">
+	<h3>Register as a farmer</h3>
+	<input type="text"placeholder="Enter your username" required class="box">
+	<input type="email"placeholder="Enter your email" required class="box">
+	<input type="password" id="passswords" value="" placeholder="Enter your password"required class="box">
+		<input type="password" id="passwordss" value="" placeholder="Retype your password" required class="box">
+		<span id="messages"> </span>
+		<input type="number"placeholder="Enter your citizenship no." required class="box">
+
+	<!--<p>Forgot your password ?<a href="#">click here</a></p>----->
+	<p>Already have an account ?<a href="#" class="logggin" id="loginnnow">login</a></p>
+
+
+	<input type="submit" onclick="checkpassword" value="Register now" class="btn">
+</form>
+
+
+
+<!--experiment----------------------------------------------------------------------------------------------->
 
 
 
@@ -161,7 +208,7 @@
 		</div>
 	</div>
 </section>
-<!--products-->
+<!--products------------------------------------------------------------------------------>
 <section class="Products" id="Products">
 	<h1 class="heading"> Our <span>products</span></h1>
 		<div class="swiper Product-slider">
@@ -266,7 +313,7 @@
 
 		
 </section>
-<!--categories-->
+<!--categories---------------------------------------------------------------------------------------------------->
 <section class="Categories" id="Categories">
 	<h1 class="heading">Products<span>Categories</span></h1>
 	<div class="box-container">
@@ -279,13 +326,13 @@
 		</div>
 		<div class="box">
 			<img src="image/cat-2.png">
-			<h3>Vegetables</h3>
+			<h3>Fruits</h3>
 			<p>upto 50% off</p>
 			<a href="#" class="btn">Buy now</a>
 		</div>
 		<div class="box">
-			<img src="image/cat-3.png">
-			<h3>Vegetables</h3>
+			<img src="image/crops.jpg">
+			<h3>Crops</h3>
 			<p>upto 50% off</p>
 			<a href="#" class="btn">Buy now</a>
 		</div>
@@ -329,9 +376,9 @@
 				</div>
 			</div>
 			<div class="swiper-slide box">
-				<img src="image/Anje-1.png">
+				<img src="image/Rashmee.jpg">
 				<p>I turned vegan because of this website. More people should know about it!!</p>
-				<h3>Anjelina Jolie</h3>
+				<h3>Rashmee Basnet</h3>
 				<div class="stars">
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
@@ -369,6 +416,142 @@
 		</div>
 	</div>
 </section>
+<!--blogs section-->
+<section class="Blogs" id="Blogs">
+<h1 class="heading"> Our <span>Blogs</span></h1>
+<p>Coming soon......This feature will soon be available</p>
+<div class="box-container">
+<div class="box">
+	<img src="image/blog-1.jpg">
+	<div class="content">
+		<div class="icons">
+			<a href="#"><i class="fa fa-user"></i> By user</a>
+			<a href="#"><i class="fa fa-calendar"></i> 20th feb, 2024</a>
+	</div>
+	<h3>Fresh and Organic fruits and vegetables</h3>
+	<p>Mitho lorem ipsum </p>
+	<a href="#" class="btn">Read more</a>
+		
+	</div>
+
+
+</div>
+
+<div class="box">
+	<img src="image/blog-2.jpg">
+	<div class="content">
+		<div class="icons">
+			<a href="#"><i class="fa fa-user"></i> By user</a>
+			<a href="#"><i class="fa fa-calendar"></i> 20th feb, 2024</a>
+	</div>
+	<h3>Fresh and Organic fruits and vegetables</h3>
+	<p>Mitho lorem ipsum </p>
+	<a href="#" class="btn">Read more</a>
+		
+	</div>
+
+
+</div>
+<div class="box">
+	<img src="image/blog-3.jpg">
+	<div class="content">
+		<div class="icons">
+			<a href="#"><i class="fa fa-user"></i> By user</a>
+			<a href="#"><i class="fa fa-calendar"></i> 20th feb, 2024</a>
+	</div>
+	<h3>Fresh and Organic fruits and vegetables</h3>
+	<p>Mitho lorem ipsum </p>
+	<a href="#" class="btn">Read more</a>
+		
+	</div>
+
+
+</div>
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+<!--blogs section-->
+
+
+<!--footer section---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+<section class="footer">
+<div class="box-container">
+	<div class="box">
+		<h3> Groco <i class="fa fa-shopping-basket"></i></h3>
+<p>Feel free to follow us on all social media handles to stay updated, all the links are given below.</p>
+<div class="share">
+	<a href="#" class="fa fa-facebook"></a>
+		<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+
+
+
+
+	
+</div>
+		
+	</div>
+
+
+	<div class="box">
+		<h3> Contact Info <i class="fa fa-phone"></i></h3>
+<p>You can contact us through folowing handles.</p>
+	<a href="#" class="links"> <i class="fa fa-phone"></i> 123456789</a>
+		<a href="#" class="links"> <i class="fa fa-envelope"></i> karesabazar@gmail.com</a>
+		<a href="#" class="links"> <i class="fa fa-map-marker"></i> Damak,Jhapa</a>
+		
+	</div>
+
+
+	<div class="box">
+		<h3> Quick links </h3>
+	<a href="#Home" class="links"> <i class="fa fa-arrow-right"></i> Home</a>
+		<a href="#Products" class="links"> <i class="fa fa-arrow-right"></i> Products</a>
+		<a href="#Features" class="links"> <i class="fa fa-arrow-right"></i> Features</a>
+		<a href="#Review" class="links"> <i class="fa fa-arrow-right"></i> Review</a>
+	<a href="#Blogs" class="links"> <i class="fa fa-arrow-right"></i> Blogs</a>
+		
+
+	
+</div>
+		
+	</div>
+	
+	
+</div>
+
+
+
+<div class="credit"> Created by<span> | Anjal Thapa and Kedar Ghimire</span>
+
+</div>
+</section>
+
+
+
+
+<!--footer section--------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
 
 
 

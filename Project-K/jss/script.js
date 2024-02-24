@@ -8,6 +8,8 @@ document.querySelector('#search-btn').onclick = () =>
 	shoppingbasket.classList.remove('active');
 	loginform.classList.remove('active');
 	navbar.classList.remove('active');
+   registrationform.classList.remove('active')
+    farmerregistration.classList.remove('active')
 }
 let shoppingbasket = document.querySelector('.shopping-basket');
 
@@ -17,6 +19,8 @@ document.querySelector('#cart-btn').onclick = () =>
 	searchForm.classList.remove('active');
 
 	loginform.classList.remove('active');
+   registrationform.classList.remove('active')
+    farmerregistration.classList.remove('active')
 	navbar.classList.remove('active');
 }
 let loginform= document.querySelector('.login-form');
@@ -26,9 +30,137 @@ document.querySelector('#login-btn').onclick = () =>
 	loginform.classList.toggle('active');
 	searchForm.classList.remove('active');
 	shoppingbasket.classList.remove('active');
+   registrationform.classList.remove('active')
+    farmerregistration.classList.remove('active')
 	
 	navbar.classList.remove('active');
 }
+
+
+
+
+
+
+//experiment---------------------------------------------------------//
+function checkpassword() {
+
+let password= document.getElementById("passsword").value;
+let confirmpassword= document.getElementById("confirmpassword").value;
+console.log(password,confirmpassword);
+let message = document.getElementById("message").value;
+if (password.length !=0) {
+  if (password==confirmpassword){
+    message.textcontext = "passwords match"
+    message.style.backgroundColor = "#3ae374";
+
+  }
+  else{
+     message.textcontext = "passwords don't match"
+    message.style.backgroundColor = "#3ae374";
+
+  }
+ 
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+let loginback= document.querySelector('.loggin');
+
+document.querySelector('#loginnow').onclick = () =>
+{
+  loginform.classList.toggle('active');
+  searchForm.classList.remove('active');
+  shoppingbasket.classList.remove('active');
+   registrationform.classList.remove('active')
+    farmerregistration.classList.remove('active')
+  
+  navbar.classList.remove('active');
+}
+
+
+
+let loginnback= document.querySelector('.logggin');
+
+document.querySelector('#loginnnow').onclick = () =>
+{
+  loginform.classList.toggle('active');
+  searchForm.classList.remove('active');
+  shoppingbasket.classList.remove('active');
+   registrationform.classList.remove('active')
+    farmerregistration.classList.remove('active')
+  
+  navbar.classList.remove('active');
+}
+
+
+
+
+
+
+
+let registrationform= document.querySelector('.registration-form');
+
+document.querySelector('#registerbtn').onclick = () =>
+{
+    registrationform.classList.toggle('active')
+  loginform.classList.remove('active');
+  searchForm.classList.remove('active');
+  shoppingbasket.classList.remove('active');
+   farmerregistration.classList.remove('active')
+
+  
+  navbar.classList.remove('active');
+}
+
+
+let farmerregistration= document.querySelector('.registrationform');
+
+document.querySelector('#register-btn').onclick = () =>
+{
+    registrationform.classList.remove('active')
+  loginform.classList.remove('active');
+  searchForm.classList.remove('active');
+  shoppingbasket.classList.remove('active');
+  farmerregistration.classList.toggle('active')
+
+  
+  navbar.classList.remove('active');
+}
+
+
+
+
+
+//experiment---------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let navbar= document.querySelector('.navbar');
 
 
